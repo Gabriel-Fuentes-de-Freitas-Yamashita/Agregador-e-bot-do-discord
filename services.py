@@ -43,8 +43,6 @@ KEYWORDS = [
     "Monitor OLED", "Monitor QLED", "Monitor IPS",
     "Logitech G", "Razer", "HyperX", # Marcas boas costumam ter promos reais
 
-    # --- PALAVRAS MÁGICAS (Gatry/Pelando) ---
-    "Bug", "Erro de preço", "Cupom", "Preço histórico"
 ]
 
 def parse_feed_sync(url: str):
