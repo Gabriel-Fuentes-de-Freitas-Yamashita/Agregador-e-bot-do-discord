@@ -97,4 +97,4 @@ O projeto está atualmente hospedado no **Render.com** (plano gratuito), conecta
 A API pode ser acessada em: `https://agregador-e-bot-do-discord.onrender.com/docs`
 
 ---
-Desenvolvido com ☕ e Python por Gabriel Fuentes.
+Desenvolvido por Gabriel Fuentes.
