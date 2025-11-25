@@ -7,15 +7,42 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from models import Feed, NewsItem
 
 # ---------------------------------------------------------
-# ⚠️ COLOQUE SEU WEBHOOK AQUI ANTES DE SALVAR
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1442718193662693438/pu30bsXfYWn8AdAVDq0VsmfA6nonyxUZYAIAxet1boBAJ79EqGkWaNooCeUwan4XpXMr" 
 # ---------------------------------------------------------
 
+# 🎯 SNIPER MODE: Lista Definitiva de Hardware
 KEYWORDS = [
-    "RTX", "4060", "4070", "4080", "4090", "RX 6600", "RX 7600", 
-    "Ryzen 5", "Ryzen 7", "5700X", "5800X3D", "7800X3D",
-    "Core i5", "Core i7", "SSD", "NVMe", "Monitor", "144hz", 
-    "Promoção", "Bug", "Cupom"
+    # --- PLACAS DE VÍDEO (NVIDIA) ---
+    "RTX 3060", "RTX 4060", "RTX 4060 Ti", 
+    "RTX 4070", "RTX 4070 Ti", "RTX 4070 Super",
+    "RTX 4080", "RTX 4090", "RTX 50", # Já preparando para o futuro
+    
+    # --- PLACAS DE VÍDEO (AMD) ---
+    "RX 6600", "RX 6650", "RX 6750", 
+    "RX 7600", "RX 7700", "RX 7800", "RX 7900",
+
+    # --- PROCESSADORES ---
+    "Ryzen 5 5600", "Ryzen 7 5700X", "Ryzen 7 5800X3D", 
+    "Ryzen 5 7600", "Ryzen 7 7800X3D", "Ryzen 9",
+    "Core i5-12", "Core i5-13", "Core i5-14", # Gerações 12, 13 e 14
+    "Core i7-12", "Core i7-13", "Core i7-14",
+
+    # --- CONSOLES & ACESSÓRIOS ---
+    "Playstation 5", "PS5", "Xbox Series X", "Nintendo Switch",
+    "Dualsense", "Controle Xbox",
+
+    # --- ARMAZENAMENTO & MEMÓRIA ---
+    "SSD 1TB", "SSD 2TB", "SSD 4TB",
+    "NVMe 1TB", "NVMe 2TB",
+    "DDR4 16GB", "DDR5 16GB", "DDR5 32GB",
+
+    # --- MONITORES & PERIFÉRICOS ---
+    "Monitor 144hz", "Monitor 165hz", "Monitor 240hz", 
+    "Monitor OLED", "Monitor QLED", "Monitor IPS",
+    "Logitech G", "Razer", "HyperX", # Marcas boas costumam ter promos reais
+
+    # --- PALAVRAS MÁGICAS (Gatry/Pelando) ---
+    "Bug", "Erro de preço", "Cupom", "Preço histórico"
 ]
 
 def parse_feed_sync(url: str):
