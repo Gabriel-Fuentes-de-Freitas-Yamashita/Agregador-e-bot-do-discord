@@ -94,7 +94,10 @@ O sistema roda em um loop infinito no Render.com, sem intervenção humana.
 
 O projeto está atualmente hospedado no **Render.com** (plano gratuito), conectado a um banco de dados **PostgreSQL no Neon.tech**. O deploy é contínuo (CI/CD) a cada push na branch `main`.
 
-A API pode ser acessada em: `https://agregador-e-bot-do-discord.onrender.com/docs`
+A API pode ser acessada em: `https://hardware-sniper-bot-1.onrender.com/docs`
+
+<img width="1834" height="898" alt="image" src="https://github.com/user-attachments/assets/342137ef-f21b-4e73-b195-af9abed1b66a" />
+
 
 ---
 Desenvolvido por Gabriel Fuentes.
