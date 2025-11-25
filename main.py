@@ -14,6 +14,7 @@ from services import update_feeds
 app = FastAPI(title="Hardware Sniper Bot")
 
 @app.get("/")
+@app.head("/")
 async def home():
     return {
         "status": "online",
